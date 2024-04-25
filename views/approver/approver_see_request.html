@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms and Time Slots</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/notiflix"></script>
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+</head>
+<body>
+    <h1>Approver See Request</h1>
+ <!-- navbar -->
+ <nav class="navbar navbar-warning bg-warning">
+    <div class="ms-3">
+        <a class="text-secondary m-2" href="/approver/dashboard">Dashboard</a>
+        <a class="text-secondary m-2" href="/approver/roomPage">Room</a>
+        <a class="text-secondary m-2" href="/approver/see-requestPage">Check Request</a>
+        <a class="text-secondary m-2" href="/approver/historyPage">History</a>
+    </div>
+  <div class="d-flex">
+      <span id="useremail" class="me-3 mt-2">useremail</span>
+      <a href="/logout">Logout</a>
+  </div>
+</nav>    <a href="/logout">Logout</a>
+<table id="timeSlotsTable">
+  <tr>
+    <th>Id</th>
+    <th>Date</th>
+    <th>RoomName</th>
+    <th>StartTime</th>
+    <th>EndTime</th>
+    <th>Student</th>
+    <th>Email</th>
+    <th>Objective</th>
+    <th>Status</th>
+    <th>Approve</th>
+    <th>Reject</th>
+  </tr>
+  <tbody id="tbody"></tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script src="/public/js/approver_see_request.js"></script>
+
+</body>
+</html>

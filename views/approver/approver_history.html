@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approver History</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/notiflix"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-warning bg-warning">
+        <div class="ms-3">
+            <a class="text-secondary m-2" href="/approver/dashboard">Dashboard</a>
+            <a class="text-secondary m-2" href="/approver/roomPage">Room</a>
+            <a class="text-secondary m-2" href="/approver/see-requestPage">Check Request</a>
+            <a class="text-secondary m-2" href="/approver/historyPage">History</a>
+        </div>
+        <div class="d-flex">
+            <span id="useremail" class="me-3 mt-2">useremail</span>
+            <a href="/logout">Logout</a>
+        </div>
+    </nav>
+    <!-- room table -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Date</th>
+                <th>RoomName</th>
+                <th>StartTime</th>
+                <th>EndTime</th>
+                <th>Student</th>
+                <th>Email</th>
+                <th>Objective</th>
+                <th>Status</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <script src="/public/js/approver_history.js"></script>
+</body>
+</html>
